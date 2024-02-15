@@ -27,6 +27,7 @@ nav ul li {
 
 nav ul li a {
   margin-left: 10px;
+  padding-left: 5px;
   color: #fff;
   text-decoration: none;
 }
