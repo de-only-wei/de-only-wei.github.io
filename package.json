@@ -1,0 +1,9 @@
+{
+  "dependencies": {
+    "cors": "^2.8.5",
+    "math.js": "^1.1.46",
+    "mathjs": "^12.3.2",
+    "zod": "^3.22.4"
+  },
+  "type": "module"
+}
