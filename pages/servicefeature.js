@@ -38,9 +38,9 @@ const capabilities = new Map([
     [28, "Mobile Friendly"]
 ]);
 
-const boolNeeds = [1, 0, 0, 0, 1, 1, 1, 1, 0, 0, 0, 1, 1, 1, 1, 1, 1, 0, 0, 0, 0, 0, 0, 1, 0, 1, 0, 0, 1, 0];
-const boolNeeds1 = [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1];
-const needs = [4, 3, 4, 1, 1, 1, 2, 2, 1, 3, 5, 5, 3, 5, 5, 3, 5, 3, 5, 3, 5, 3, 1, 3, 2, 3, 1, 4, 5, 1];
+const boolNeeds =  [1, 0, 0, 0, 1, 1, 1, 1, 0, 0, 0, 1, 1, 1, 1, 1, 1, 0, 0, 0, 0, 0, 0, 1, 0, 1, 0, 0, 1];
+const boolNeeds1 = [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1];
+const needs =      [4, 3, 4, 1, 1, 1, 2, 2, 1, 3, 5, 5, 3, 5, 5, 3, 5, 3, 5, 3, 5, 3, 1, 3, 2, 3, 1, 4, 5];
 const minimumNeeds = [[0, 2], [5, 5]]
 let isAdd = true;
 const featurematrix = [
@@ -166,8 +166,11 @@ console.log('L1: ');
 L1(boolNeeds1);
 
 console.log('L2: ');
-L2(needs, isAdd);
+L2(boolNeeds1, isAdd);
 L2(needs, !isAdd);
 
 console.log('L3: ');
 L3(minimumNeeds, boolNeeds1);
+
+console.log('L3: ');
+L3(minimumNeeds, needs);
